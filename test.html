@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="test.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="side-bar">
+        <ul class="" menu>
+          <li class="menu-item"><a href="#">Home</a></li>
+          <li class="menu-item"><a href="#">Services</a></li>
+          <li class="menu-item"><a href="#">News</a></li>
+          <li class="menu-item"><a href="#">Blog</a></li>
+          <li class="menu-item"><a href="#">Contact</a></li>
+        </ul>
+        <div class="header-mobile">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+        
+      </div>
+      <ul class="menu-mobile">
+        <li class="menu-item-mobile"><a href="#">Home</a></li>
+        <li class="menu-item-mobile"><a href="#">Services</a></li>
+        <li class="menu-item-mobile"><a href="#">News</a></li>
+        <li class="menu-item-mobile"><a href="#">Blog</a></li>
+        <li class="menu-item-mobile"><a href="#">Contact</a></li>
+      </ul>
+      <main class="content">
+        <section class="logo-block">
+          <img src="https://ncc.asia/assets/images/about_our-img.webp" alt="" />
+          <h4>We do <span class="red">it</span> with passion</h4>
+        </section>
+        <!-- About -->
+        <section class="about">
+          <div class="heading">
+            <h4 class="heading-title">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit
+            </h4>
+            <p class="heading-des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              ducimus. Odit, officiis. Quas, reiciendis repellat nulla quaerat
+              totam fugit quibusdam, tenetur reprehenderit possimus, iste
+              debitis. Tempore voluptas tempora sequi natus. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Ipsa, ducimus. Odit,
+              officiis. Quas, reiciendis repellat nulla quaerat totam fugit
+              quibusdam, tenetur reprehenderit possimus, iste debitis. Tempore
+              voluptas tempora sequi natus.
+            </p>
+          </div>
+        </section>
+
+        <!-- List card-->
+        <section class="list-card">
+          <div class="card-item">
+            <h2 class="card-title">Lorem ipsum dolor sit amet</h2>
+            <div class="card-content">
+              <img
+                src="https://ncc.asia/assets/images/about_our-img.webp"
+                alt=""
+              />
+              <p class="card-des">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus omnis ut aliquid provident itaque rerum, quidem
+                obcaecati a sed exercitationem culpa, id dolore ipsam. Error
+                tempora adipisci non saepe sed.
+              </p>
+            </div>
+          </div>
+          <div class="card-item">
+            <h2 class="card-title">Lorem ipsum dolor sit amet</h2>
+            <div class="card-content">
+              <img
+                src="https://ncc.asia/assets/images/about_our-img.webp"
+                alt=""
+              />
+              <p class="card-des">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus omnis ut aliquid provident itaque rerum, quidem
+                obcaecati a sed exercitationem culpa, id dolore ipsam. Error
+                tempora adipisci non saepe sed.
+              </p>
+            </div>
+          </div>
+          <div class="card-item">
+            <h2 class="card-title">Lorem ipsum dolor sit amet</h2>
+            <div class="card-content">
+              <img
+                src="https://ncc.asia/assets/images/about_our-img.webp"
+                alt=""
+              />
+              <p class="card-des">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus omnis ut aliquid provident itaque rerum, quidem
+                obcaecati a sed exercitationem culpa, id dolore ipsam. Error
+                tempora adipisci non saepe sed.
+              </p>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <p>CopyRight @2021</p>
+        </footer>
+      </main>
+    </div>
+
+    <script>
+      const menuIcon = document.querySelector(".header-mobile i");
+      menuIcon.onclick = () => {
+        const menuMobile = document.querySelector(".menu-mobile")
+        menuMobile.classList.toggle("hide")
+        console.log(menuMobile);
+      }
+    </script>
+  </body>
+</html>
